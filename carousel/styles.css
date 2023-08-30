@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+
+.img-container {
+    border-radius: 16px;
+    width: 95%;
+    position: relative;
+}
+
+.img-container button {
+    width: 64px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+img {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 16px;
+}
+
+.active {
+    display: block;
+}
+
+#next {
+    right: 0;
+}
+
+#prev:hover,
+#next:hover {
+    opacity: 0.4;
+    background-color: linear-gradient(deg);
+}
